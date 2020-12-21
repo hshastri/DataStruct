@@ -89,5 +89,7 @@ def main():
     heap.add(17)
     heap.add(8)
     heap.printHeap()
+    heap.poll()
+    heap.printHeap()
 if __name__ == '__main__':
 	main()
