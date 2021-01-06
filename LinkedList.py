@@ -37,6 +37,7 @@ class LinkedList:
 		while (current.next != None):
 			if (current.next.data == data):
 				current.next = current.next.next
+				return
 			current = current.next
 
 

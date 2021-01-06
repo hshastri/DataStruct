@@ -28,7 +28,7 @@ class MyQueue:
 		if (self.head == None):
 			self.head = self.tail
 
-		print(self.head)
+		#print(self.head)
 
 	
 	def remove(self):
