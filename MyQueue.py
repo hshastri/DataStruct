@@ -26,7 +26,7 @@ class MyQueue:
 		self.tail = node
 
 		if (self.head == None):
-			self.head = self.tail
+			self.head = node
 
 		#print(self.head)
 
