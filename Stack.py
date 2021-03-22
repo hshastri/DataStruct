@@ -16,10 +16,15 @@ class Stack:
 
 	def push(self, data):
 		node : Node = Node(data)
+		if (self.top == None):
+			self.top = node
+			return None
 		node.next = self.top
 		self.top = node
 
 	def pop(self):
+		if (self.top == None):
+			return
 		data = self.top.data
 		self.top = self.top.next
 		return data
@@ -31,9 +36,18 @@ def main():
 	packets.push("packet1")
 	packets.push("packet2")
 	packets.push("packet3")
+	packets.push("A")
 	print(packets.peek())
 	print(packets.pop())
 	print(packets.peek())
+	print(packets.pop())
+	print(packets.peek())
+	print(packets.pop())
+	print(packets.peek())
+	print(packets.pop())
+	print(packets.peek())
+	print(packets.pop())
+
 
 
 if __name__ == '__main__':

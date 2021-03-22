@@ -54,7 +54,6 @@ class LinkedList:
 
 		print(arrayOfNodes)
 
-
 def main():
 	lan : LinkedList = LinkedList()
 	lan.append("network1")

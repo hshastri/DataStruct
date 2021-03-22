@@ -31,7 +31,7 @@ class Heap:
         return self.heapItems[self.getParentIndex(index)]
 
     def peek(self):
-        if len(self.heapItems == 0):
+        if len(self.heapItems) == 0:
             raise Exception("Empty Heap")
         return self.heapItems[0]
 
